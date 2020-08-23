@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+#welcome{
+	position: absolute;
+	top: 10%;
+	left: 2%;
+}
+
+#heading{
+	font-size: 50px;
+	color: aliceblue;
+}
+
+#mainhead{
+	font-weight: 1000;
+	font-size: 70px;
+	color: aliceblue;
+}
+
+body{
+  min-height: 100vh;
+	background-image: url(design0.png);
+  background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.login-form{
+  width: 500px;
+  height: 90%;
+  padding:10px 50px 80px 50px;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
+.login-form h1{
+  text-align: center;
+	margin-top: 10px;
+  margin-bottom: 30px;
+	  font-family: 'Montserrat', sans-serif;
+	  color: #0572C4;
+}
+
+.txtb{
+  border-bottom: 1px solid #0572C4;
+  position: relative;
+  margin: 20px 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.txtb input{
+  font-size: 13px;
+  color: #333;
+   border-left: 1px solid #0572C4;
+	border-top: 1px solid #0572C4;
+	border-right: 1px solid #0572C4;
+	border-bottom: none;
+  border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  color: #0572C4;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 25px 5px 15px 10px;
+  height: 40px;
+}
+
+.txtb select{
+	font-size: 12px;
+	 font-family: 'Montserrat', sans-serif;
+  color: #333;
+   border-left: 1px solid #0572C4;
+	border-top: 1px solid #0572C4;
+	border-right: 1px solid #0572C4;
+	border-bottom: 0px;
+  border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  color: #0572C4;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 10px 5px 10px 10px;
+  height: 40px;
+}
+
+.txtb span::before{
+	font-size: 12px;
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: #0572C4;
+  transform: translateY(-50%);
+  transition: .3s;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.txtb span::after{
+  content: '';
+  position: absolute;
+	left: 0%;
+	top: 100%;
+  width: 0%;
+  height: 2px;
+  transition: .3s;
+}
+
+.focus + span::before{
+  top: 5px;
+	font-size: 9px;
+	padding-top: 10px;
+}
+
+.focus + span::after{
+  width: 100%;
+background: linear-gradient(120deg,#3498db,#8e44ad);
+}
+
+.logbtn{
+  display: block;
+	padding: 12px 20px;
+	border: 0px solid white;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  background: linear-gradient(120deg,#3498db,#8e44ad,#3498db);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logbtn:hover{
+  background-position: right;
+}
+
+.bottom-text{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+}
